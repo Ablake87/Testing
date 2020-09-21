@@ -56,7 +56,12 @@
 \begin{adjustwidth}{1.5in}{1.5in}
 {\small
 \noindent\textbf{Abstract.} \hspace{1em}
-	Using a single-board open source computer called the BBB (BBB)and a Python-based code structure,a pulse generator that is entirely programmable and very low cost was used to control timing. Making use of the computers' programmable real-time unit the engineers are able to achieve a revist period of 5 ns, a standard deviation of 290ps, as well as a frequency stability at 10ppm.
+	A BeagleBone Black (BBB) single-board open-source computer was implemented as a
+low-cost fully programmable pulse generator. The pulse generator makes use of the BBB
+Programmable Real-Time Unit (PRU) subsystem to achieve a deterministic temporal
+resolution of 5 ns, an RMS jitter of 290 ps and a timebase stability on the order of 10 ppm.
+A Python-based software framework has also been developed to simplify the usage of the
+pulse generator.
 }
 \end{adjustwidth}
 \vspace{9pt}
@@ -65,15 +70,14 @@
 ]
 
 %%% Body -------------------------
-
+\section{Summary} 
+\label{sec:summary}
+In this article ~\citep{Fedrizzi2015}, a BeagleBone Black single-board open source computer was used as a pulse generator in an effort to determine its overall accuracy and precision. The more expensive pulse generators are known to be both, but with the restrictions of budget this particular generator needed to be tested. This testing took the form of producing pulses at a set frequency with defined temporal offsets. Python is used to create parameters for the experiment and to measure and record the delays between the switching tasks of output timing pulses. The ability to use Python in this manner is another advantage that the BBB has over many commercial pulse generators.
 
 \section{Introduction} 
 \label{sec:introduction}
 
-Hello World
-``Introduce what your question is. Explain why someone should find this interesting. Summarize what is currently known about the question. Introduce a little of what you found and how you found it. You should explain any ideas or techniques that are necessary for someone to understand your results section.''
-
-Typically, you will be asked to include in your report a theoretical prediction for comparison with your experimental results. Typically, this section is a good place for presenting that. You needn't always include every aspect of your derivation, but you should "sketch out" the process, hitting the "highlight" ideas an equations along the way. Typically there's no need to, say, plot the results here, since you'll be plotting them again alongside the data in the Results section (\autoref{sec:results}). 
+The experiment found that, as expected, commercial competitors had an overall higher degree of precision and accuracy, they could not match the versatility offered by the BBB, which can receive the Python inputs. The price is also a factor that the commercial generators could not match. This means that the BeagleBone Black single-board open source computer can be effectively used by those in an academic setting as long as the accuracy is taken into account when collecting data for the experiment.  
 
 \section{Materials and Methods}
 
@@ -182,14 +186,7 @@ Or you could do it multiple times: \autoref{eq:int}.
 \subsection{Figures}
 It is easy enough to add a figure. In the subdirectory \texttt{figures}, I placed a file \texttt{data.pdf}. If we want to include it in the document, we use the following commands.
 
-\begin{figure}[bt]
-	\centering
-	\includegraphics[width=.9\linewidth]{figures/data.pdf}
-	\caption{here's a caption.}
-	\label{fig:data}
-\end{figure}
 
-We can easily reference the figure with its label, like \autoref{fig:data}.
 
 \subsection{Tables}
 Tables can be a pain in \LaTeX{}. Here's a simple table.

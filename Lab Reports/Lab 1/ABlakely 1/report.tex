@@ -15,7 +15,7 @@
 	\vspace{3pt}
 	% Title:
 	{\sffamily\bfseries\Large
-		Report for Laboratory One: 
+		Report for Laboratory 1: Lab Summary
 	} \\
 	{\color{gray}
 		\vspace{3pt}
@@ -24,11 +24,11 @@
 	}
 	{
 		\hspace*{\fill}
+		Irfan Ahmad
+		\hspace*{\fill}
 		Austin Piper
 		\hspace*{\fill}
-		Alex Blakely
-		\hspace*{\fill}
-		Ahmed Irfan
+		Alex Blakley
 		\hspace*{\fill}
 %		Fourth Author    % uncomment these two lines if there's a fourth author
 %		\hspace*{\fill}
@@ -56,7 +56,12 @@
 \begin{adjustwidth}{1.5in}{1.5in}
 {\small
 \noindent\textbf{Abstract.} \hspace{1em}
-	Using a single-board open source computer called the BBB (BBB)and a Python-based code structure,a pulse generator that is entirely programmable and very low cost was used to control timing. Making use of the computers' programmable real-time unit the engineers are able to achieve a revist period of 5 ns, a standard deviation of 290ps, as well as a frequency stability at 10ppm.
+A BeagleBone Black (BBB) single-board open-source computer was implemented as a
+low-cost fully programmable pulse generator. The pulse generator makes use of the BBB
+Programmable Real-Time Unit (PRU) subsystem to achieve a deterministic temporal
+resolution of 5 ns, an RMS jitter of 290 ps and a timebase stability on the order of 10 ppm.
+A Python-based software framework has also been developed to simplify the usage of the
+pulse generator.
 }
 \end{adjustwidth}
 \vspace{9pt}
@@ -66,13 +71,16 @@
 
 %%% Body -------------------------
 
+See the \LaTeX{} tutorial below in \autoref{sec:latex}. You should delete \autoref{sec:latex} and the following filler text when using the template.
 
-\section{Introduction} 
-\label{sec:introduction}
+The suggested structure of the document is given. In the following sections, content is suggested by direct quotes from MIT's \href{http://ocw.mit.edu/courses/biological-engineering/20-109-laboratory-fundamentals-in-biological-engineering-fall-2007/assignments/guide_lab_report-htm/}{Guidelines for Writing a Lab Report}. This text should obviously be deleted at some point.
 
-``Introduce what your question is. Explain why someone should find this interesting. Summarize what is currently known about the question. Introduce a little of what you found and how you found it. You should explain any ideas or techniques that are necessary for someone to understand your results section.''
+\section{Summary of Fedrizzi Article} 
 
-Typically, you will be asked to include in your report a theoretical prediction for comparison with your experimental results. Typically, this section is a good place for presenting that. You needn't always include every aspect of your derivation, but you should "sketch out" the process, hitting the "highlight" ideas an equations along the way. Typically there's no need to, say, plot the results here, since you'll be plotting them again alongside the data in the Results section (\autoref{sec:results}). 
+In this article ~\citep[{Fedrizzi2015}], a BeagleBone Black single-board open source computer was used as a pulse generator in an effort to determine its overall accuracy and precision. The more expensive pulse generators are known to be both, but with the restrictions of budget this particular generator needed to be tested. This testing took the form of producing pulses at a set frequency with defined temporal offsets. Python is used to create parameters for the experiment and to measure and record the delays between the switching tasks of output timing pulses. The ability to use Python in this manner is another advantage that the BBB has over many commercial pulse generators.
+
+  
+	The experiment found that, as expected, commercial competitors had an overall higher degree of precision and accuracy, they could not match the versatility offered by the BBB, which can receive the Python inputs. The price is also a factor that the commercial generators could not match. This means that the BeagleBone Black single-board open source computer can be effectively used by those in an academic setting as long as the accuracy is taken into account when collecting data for the experiment. 
 
 \section{Materials and Methods}
 

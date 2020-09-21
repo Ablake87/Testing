@@ -15,7 +15,7 @@
 	\vspace{3pt}
 	% Title:
 	{\sffamily\bfseries\Large
-		Report for Laboratory 2: Voltage Dividers
+		Report for Laboratory Two: Voltage Dividers
 	} \\
 	{\color{gray}
 		\vspace{3pt}
@@ -56,9 +56,9 @@
 \begin{adjustwidth}{1.5in}{1.5in}
 {\small
 \noindent\textbf{Abstract.} \hspace{1em}
-	Applying a 10V power supply to a voltage divider circuit with two resistors in series the voltage across both resistors is constant, although voltage across a single resistor is changing depending on resistance. Using a myRiO configured with the labVIEW software to change our input voltage and measure the voltage source and the resistor voltage. Connecting a function generator to an oscilloscope, a variety of functions at 5Vpp had a period of 2.5ms.
+	Applying a 10V DC power supply to a voltage divider circuit with two resistors in series, the voltage across both resistors remains constant while the voltage across a single resistor changes depending on the resistance. Using a myRIO  configured with the labVIEW software to change our input voltage and measure the voltage source and the resistor voltage. When connecting a arbitrary function generator to an oscilloscope, a variety of wave functions at 5Vpp had a period of 2.5ms.
 }
-\end{adjustwidth} 
+\end{adjustwidth}
 \vspace{9pt}
 \hrule
 \vspace{1\baselineskip}
@@ -70,17 +70,33 @@
 \section{Introduction} 
 \label{sec:introduction}
 
+	
 ``Introduce what your question is. Explain why someone should find this interesting. Summarize what is currently known about the question. Introduce a little of what you found and how you found it. You should explain any ideas or techniques that are necessary for someone to understand your results section.''
 
 Typically, you will be asked to include in your report a theoretical prediction for comparison with your experimental results. Typically, this section is a good place for presenting that. You needn't always include every aspect of your derivation, but you should "sketch out" the process, hitting the "highlight" ideas an equations along the way. Typically there's no need to, say, plot the results here, since you'll be plotting them again alongside the data in the Results section (\autoref{sec:results}). 
 
 \section{Materials and Methods}
 
-``This is like a cooking recipe. Include enough detail so that someone can repeat the experiment. It is important that the reader be able to interpret the results knowing the context in which they were obtained.
+	This lab has three parts. In the first part of the lab two resistors were placed in series on a bread board connected to a DC power supply set to 10V. Using a multimeter measure the voltage across each resistor and both resistors. Then replacing the second resistor and taking measurements again for all four different resistors. 
+	
+	\begin{figure}
+	\centering
+	\includegraphics[width=.9\linewidth]{figures/vdc.pdf}
+	\caption{Voltage divider circuit}
+	\label{fig:circuit}
+\end{figure}
 
-``The Materials and Methods section should be written in the past tense, since your experiments are completed at the time you are writing your paper.''
+	For part two of this lab a myRIO configured with the labVIEW software was be used as the power supply and measurement tool, on the same voltage divider circuit. The myRIO was connected to measure the voltage across both resistors and the voltage across the second resistor. Using labVIEW an analog output and input were made to recieve data from the myRIO, as well as a voltage vs time chart window. Starting at 0V and working up to 10V, in increments of 1V, the voltage source and the resistor voltage is displayed in labVIEW and recorded.Again replacing the second resistor with each of the different resistors and repeating measurements. 
+	
+	\begin{figure}
+	\centering
+	\includegraphics[width=.9\linewidth]{figures/myr.pdf}
+	\caption{myRIO Voltage divider circuit}
+	\label{fig:circuit2}
+\end{figure}
 
-Here are some things you don't want to do in this section.
+
+
 
 \begin{enumerate}
 \item 
@@ -91,8 +107,8 @@ Don't simply list the procedure in bullet points (although some lists are fine).
 Don't use a figure from my description unless you properly cite it! A proper citation would be \citep[p.~32]{Picone2018}.
 \end{enumerate}
 
-\section{Results}
-\label{sec:results}
+
+
 
 ``To write the results section, use the figures and tables as a guide. Start by outlining, in point form, what you found, going slowly through each part of the figures. Then take the points and group them into paragraphs, and finally order the points within each paragraph. Present the data as fully as possible, including stuff that at the moment does not quite make sense.
 
