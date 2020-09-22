@@ -70,159 +70,138 @@
 \section{Introduction} 
 \label{sec:introduction}
 
-	
-``Introduce what your question is. Explain why someone should find this interesting. Summarize what is currently known about the question. Introduce a little of what you found and how you found it. You should explain any ideas or techniques that are necessary for someone to understand your results section.''
+ ``Introduce what your question is. Explain why someone should find this interesting. Summarize what is currently known about the question. Introduce a little of what you found and how you found it. You should explain any ideas or techniques that are necessary for someone to understand your results section.''
 
 Typically, you will be asked to include in your report a theoretical prediction for comparison with your experimental results. Typically, this section is a good place for presenting that. You needn't always include every aspect of your derivation, but you should "sketch out" the process, hitting the "highlight" ideas an equations along the way. Typically there's no need to, say, plot the results here, since you'll be plotting them again alongside the data in the Results section (\autoref{sec:results}). 
 
 \section{Materials and Methods}
 
-	This lab has three parts. In the first part of the lab two resistors were placed in series on a bread board connected to a DC power supply set to 10V. Using a multimeter measure the voltage across each resistor and both resistors. Then replacing the second resistor and taking measurements again for all four different resistors. 
+	This lab has three parts. In the first part of the lab two resistors were placed in series on a bread board connected to a DC power supply set to 10V. Using a multimeter measure the voltage across each resistor and both resistors. Then replacing the second resistor and taking measurements again for all four different resistors.\autoref{fig:circuit}
 	
-	\begin{figure}
+	
+	For part two of this lab a myRIO configured with the labVIEW software was be used as the power supply and measurement tool, on the same voltage divider circuit. The myRIO was connected to measure the voltage across both resistors and the voltage across the second resistor. Using labVIEW an analog output and input were made to recieve data from the myRIO, as well as a voltage vs time chart window. Starting at 0V and working up to 10V, in increments of 1V, the voltage source and the resistor voltage is displayed in labVIEW and recorded.Again replacing the second resistor with each of the different resistors and repeating measurements.\autoref{fig:myrio} 
+	
+
+	In part three of this lab an arbitrary function generator was connected to an oscilloscope. While producing a sine wave with the function generator set to 5Vpp, then by adjusting the oscilloscope settings a stable wave was found and the peak to peak amplitude and period were estimated.\autoref{fig:stable}
+	
+\begin{figure}
 	\centering
 	\includegraphics[width=.9\linewidth]{figures/vdc.pdf}
 	\caption{Voltage divider circuit}
 	\label{fig:circuit}
 \end{figure}
 
-	For part two of this lab a myRIO configured with the labVIEW software was be used as the power supply and measurement tool, on the same voltage divider circuit. The myRIO was connected to measure the voltage across both resistors and the voltage across the second resistor. Using labVIEW an analog output and input were made to recieve data from the myRIO, as well as a voltage vs time chart window. Starting at 0V and working up to 10V, in increments of 1V, the voltage source and the resistor voltage is displayed in labVIEW and recorded.Again replacing the second resistor with each of the different resistors and repeating measurements. 
-	
-	\begin{figure}
+\begin{figure}
 	\centering
 	\includegraphics[width=.9\linewidth]{figures/myr.pdf}
-	\caption{myRIO Voltage divider circuit}
-	\label{fig:circuit2}
+	\caption{myRIO Ciruit}
+	\label{fig:myrio}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=.9\linewidth]{figures/Oscilloscope.PNG}
+	\caption{Oscilloscope}
+	\label{fig:stable}
 \end{figure}
 
 
+\section{Results}
+
+ In the first section of the lab the results showed that as the total resistance changed for the circuit the total voltage across the circuit was not changing. The voltage across the second resistor changed when the resistance changed. \autoref{tab:Tab1}
+ 
+ 	After connecting the myRIO to the circuit and proceeding through the different input voltages we found that again the voltage through the entire circuit was constant no matter the total resistance and the voltage through the resistor depended on the amount of resistance.\autoref{tab:Tab2}
+ 	
+ 	When observing the stable wave made by the function generator in the oscilloscope it was estimated that the peak-peak amplitude was a 5V with a period of 2.5ms. Even when changing the shape of the wave the period and amplitude stayed the same.  
+ 	  
+\section{Equations}
 
 
-\begin{enumerate}
-\item 
-Don't simply copy and paste material from my description. 
-\item 
-Don't simply list the procedure in bullet points (although some lists are fine). I want a description in \emph{your} words.
-\item
-Don't use a figure from my description unless you properly cite it! A proper citation would be \citep[p.~32]{Picone2018}.
-\end{enumerate}
-
-
-
-
-``To write the results section, use the figures and tables as a guide. Start by outlining, in point form, what you found, going slowly through each part of the figures. Then take the points and group them into paragraphs, and finally order the points within each paragraph. Present the data as fully as possible, including stuff that at the moment does not quite make sense.
-
-``Verbs in the results section are usually in the past tense. Only established scientific knowledge is written about in the present tense, `the world is round,' for example. You cannot presume that your own data are part of the body of established scientific knowledge, and so when you describe your own results, use the past tense, `a band of 1.3 KB was seen,' for example. There are, however, exceptions to this general rule. It is acceptable to say, `Table 3 shows the sizes of the DNA fragments in our preparation.' It is also acceptable to say, `In a 1991 paper, Ebright and coworkers used PCR to mutagenize DNA.' \ldots
-
-``Some readers begin by scanning the figures first. The figures, with the legends, should provide a self-explanatory overview of your data. Decide what the data show, then create figures which highlight the most important points of your paper.
-
-``Tables are used to present repetitive data that is numerical. Graphs or illustrations, collectively called figures, are used to present numerical trends, raw data (like a picture of a gel), or a model that explains your work.
-
-``When you prepare your figures and tables, keep in mind that it is significantly more expensive for journals to publish figures and tables than text, so try to present the data in a way that is worthy of such added expense.''
-
+\begin{align}
+	\bm{VR1} = \bm{Vs} 
+    	\left(
+        	\frac{R1}{R1+R2}
+        \right), 
+\end{align}
 \section{Discussion}
+This lab demonstrated 
+\begin{figure}
+	\centering
+	\includegraphics[width=.9\linewidth]{figures/V vs R.PNG}
+	\caption{}
+	\label{fig:graph}
+\end{figure}
 
-``This is the section of the paper for you to show off your understanding of the data. You should summarize what you found. Explain how this relates to what others have found. Explain the implications.''
+\begin{figure}
+	\centering
+	\includegraphics[width=.9\linewidth]{figures/Vin vs Vout.PNG}
+	\caption{Vin vs Vout(Measured and Theoretical)}
+	\label{fig:vin/out}
+\end{figure}
 
 \section{Author Contributions}
 
-You are required to describe each member's contributions to the laboratory exercise and report.
+Austin helped with the abstract and tables. Ahmed provided photos and wrote the introduction. Alex created graphs and helped write.
 
-%%% References -------------------------
 
-\bibliographystyle{plainnat}
-\bibliography{report}
-
-%%% Appendices -------------------------
-
-\appendix
-
-\section{Appendix: \LaTeX{} Tutorial}\label{sec:latex}
-
-I'm going to teach you how to use \LaTeX{} a little bit. Like how to cite a source, insert a graphic, and build tables. Follow along in the \texttt{report.tex} file.
-
-{\bfseries\color{red} Do not use this appendix as any sort of template for the report! Equations, figures, and tables should appear in the body of the report.} Delete this appendix before submitting your report.
-
-\subsection{Citing a Source}
-
-Let's cite a source. The source must be already saved as a BibTeX file (\texttt{.bib}) in the same directory as the \texttt{.tex} document. I have already created a sample \texttt{report.bib} file. (If you want to add and remove sources to this file, you may use a reference manager like BibDesk on a Mac or JabRef on a PC.)
-
-The next step is to cite the source, inline~\citep{Rowell1997}. And I can easily cite another reference~\citep{Ciesielski1997}.
-
-\subsection{Equations}
-
-Equations should appear in the body of the report, especially in the Introduction (\autoref{sec:introduction}), when describing your theoretical predictions. An equation should be part of a complete sentence.
-
-Here are some examples.
-
-We now see that
-\begin{align}
-	x = 1 .
-\end{align}
-
-Somehow, the following impossible equation hold:
-\begin{align} \label{eq:int}
-	\int_0^t x_2 \sin{x} dx = 
-	\begin{bmatrix}
-		1 & 0 & 8 \\
-		0 & x^7 \\
-		7 &
-	\end{bmatrix} .
-\end{align}
-We now see that 
-\begin{align}
-	\bm{x} = \bm{\alpha} 
-    \left( 
-    	\left(
-        	\frac{2}{3}
-        \right) + 
-        \frac{5}{6} 
-    \right) , 
-\end{align}
-where $\bm{\alpha}$ is the coefficient of stupidity.
-
-And this works too: $\frac{\partial x}{\partial y}$ .
-
-\begin{subequations}
-\begin{align*}
-	x &= 2 y & \text{(where $x>2$)} \\
-	y &= 4 x + 8 &
-\end{align*}
-\end{subequations}
-
-Later, you could refer to the equation \autoref{eq:int}.
-
-Or you could do it multiple times: \autoref{eq:int}.
-
-\subsection{Figures}
-It is easy enough to add a figure. In the subdirectory \texttt{figures}, I placed a file \texttt{data.pdf}. If we want to include it in the document, we use the following commands.
-
-\begin{figure}[bt]
-	\centering
-	\includegraphics[width=.9\linewidth]{figures/data.pdf}
-	\caption{here's a caption.}
-	\label{fig:data}
-\end{figure}
-
-We can easily reference the figure with its label, like \autoref{fig:data}.
-
-\subsection{Tables}
-Tables can be a pain in \LaTeX{}. Here's a simple table.
-
-Notice (as in \autoref{tab:dummy}) that these things don't go where they're entered. Most of the time it's preferable to have a figure or table ``float'' such that it is at the top or bottom of a column.
  
-\begin{table}[bt]
-	\begin{tabularx}{1\linewidth}{ lXX }
+\begin{table}
+	\begin{tabularx}{1\linewidth}{ lXXXXX|cXXX }
 		\hline
-		 & \textbf{label 1} & \textbf{label 2} \\
+		 & \textbf{R1} & \textbf{R2} & \textbf{R3} & \textbf{R4} & \textbf{R5}\\
 		\hline
-		Interesting thing & $5.1$ & $603$ \\
-		Thing of interest & pigtails & $x^3$ \\
+		Ri(MΩ) & 1.4667 & 1.4679 & 2.2 & 3.239 & 4.712 \\
+		\cline{1-6}
+		Vs(V) & 10.093 & 10.093 & 10.091 & 10.093 & 10.097 \\
+		\cline{1-6}
+		Vr(V) & 4.691 & 4.708 & 5.547 & 6.321 & 6.936 \\
 		\hline
 	\end{tabularx}
-	\caption{a table caption.}
-	\label{tab:dummy}
+	\caption{Multimeter measurments.}
+	\label{tab:Tab1}
 \end{table}
 
+\begin{table}
+	\begin{tabularx}{1\linewidth}{ lXXXXX|cXXXXXXXXXXXXXXXXXXXX }
+		\hline
+		 & \textbf{nom. Vs} & \textbf{R2} & \textbf{R3} & \textbf{R4} & \textbf{R5}\\
+		\hline
+		Vs(V) & 0 & 0.006 & 0.006 & 0.006 & 0.006 \\
+		Vr(V) & 0 & 0.002 & 0.003 & 0.003 & 0.004 \\
+		\cline{1-6}
+		Vs(V) & 1 & 1.0101 & 1.010 & 1.010 & 1.010 \\
+		Vr(V) & 1 & 0.471 & 0.555 & 0.632 & 0.693 \\
+		\cline{1-6}
+		Vs(V) & 2 & 2.015 & 2.015 & 2.015 & 2.015 \\
+		Vr(V) & 2 & 0.940 & 1.107 & 1.241 & 1.384 \\
+		\cline{1-6}
+		Vs(V) & 3 & 3.013 & 3.013 & 3.013 & 3.013 \\
+		Vr(V) & 3 & 1.406 & 1.656 & 1.887 & 2.070 \\
+		\cline{1-6}
+		Vs(V) & 4 & 4.018 & 4.018 & 4.018 & 4.018 \\
+		Vr(V) & 4 & 1.875 & 2.209 & 2.516 & 2.760 \\
+		\cline{1-6}
+		Vs(V) & 5 & 5.023 & 5.023 & 5.023 & 5.023 \\
+		Vr(V) & 5 & 2.344 & 2.761 & 3.145 & 3.450 \\
+		\cline{1-6}
+		Vs(V) & 6 & 6.027 & 6.027 & 6.027 & 6.027 \\
+		Vr(V) & 6 & 2.813 & 3.313 & 3.774 & 4.140 \\
+		\cline{1-6}
+		Vs(V) & 7 & 7.032 & 7.032 & 7.032 & 7.032 \\
+		Vr(V) & 7 & 3.282 & 3.866 & 4.403 & 4.830 \\
+		\cline{1-6}
+		Vs(V) & 8 & 8.030 & 8.030 & 8.030 & 8.030 \\
+		Vr(V) & 8 & 3.748 & 4.415 & 5.028 & 5.516 \\
+		\cline{1-6}
+		Vs(V) & 9 & 9.035 & 9.035 & 9.035 & 9.035 \\
+		Vr(V) & 9 & 4.218 & 4.967 & 5.658 & 6.207 \\
+		\cline{1-6}
+		Vs(V) & 10 & 10.011 & 10.011 & 10.011 & 10.011 \\
+		Vr(V) & 10 & 4.673 & 5.504 & 6.269 & 6.877 \\
+		\hline
+	\end{tabularx}
+	\caption{myRIO w/ labVIEW read outs.}
+	\label{tab:Tab2}
+\end{table}
 
 \end{document}  
