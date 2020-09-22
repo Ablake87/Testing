@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.11)  21 SEP 2020 13:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.9)  21 SEP 2020 21:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1472,10 +1472,6 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 13.24796pt on input line 65.
 
 
-LaTeX Warning: Reference `sec:results' on page 1 undefined on input line 76.
-
-
-
 pdfTeX warning: pdflatex.exe (file ./figures/vdc.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
 <figures/vdc.pdf, id=27, 845.1575pt x 597.23125pt>
@@ -1500,6 +1496,10 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
+Package natbib Warning: Citation `Picone2018' on page 1 undefined on input line
+ 107.
+
+
 Package Fancyhdr Warning: \footskip is too small (9.03374pt): 
 Make it at least 12.0pt.
 We now make it that large for the rest of the document.
@@ -1508,12 +1508,7 @@ This may cause the page layout to be inconsistent, however.
 [1{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figures/vdc.pdf>]
-
-Package natbib Warning: Citation `Picone2018' on page 2 undefined on input line
- 107.
-
-(./report.bbl)
+ <./figures/vdc.pdf>] (./report.bbl)
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
 (Font)              scaled to size 13.67995pt on input line 140.
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
@@ -1548,22 +1543,22 @@ LaTeX Font Info:    Font shape `U/zeus/b/n' will be
 (Font)              scaled to size 7.59998pt on input line 140.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 11.03998pt on input line 146.
-<figures/data.pdf, id=54, 239.09627pt x 195.33377pt>
+<figures/data.pdf, id=56, 239.09627pt x 195.33377pt>
 File: figures/data.pdf Graphic file (type pdf)
 <use figures/data.pdf>
 Package pdftex.def Info: figures/data.pdf  used on input line 202.
 (pdftex.def)             Requested size: 239.40962pt x 195.5896pt.
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 208.
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <7.6> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 208.
- [2]
+
 
 Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[3
+LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10> not available
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 228.
+LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <7.6> not available
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 228.
+[2] [3
 
  <./figures/data.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
@@ -1578,18 +1573,15 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 38472 strings out of 480876
- 885167 string characters out of 5911487
- 1325715 words of memory out of 5000000
- 53211 multiletter control sequences out of 15000+600000
+ 38471 strings out of 480876
+ 885154 string characters out of 5911488
+ 1326715 words of memory out of 5000000
+ 53210 multiletter control sequences out of 15000+600000
  631595 words of font info for 180 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,14n,102p,793b,858s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,14n,102p,793b,723s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2020/texm
 f-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2020/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/
@@ -1604,7 +1596,7 @@ ist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1
 tic/uhvb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb>
 <c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/202
 0/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (3 pages, 503895 bytes).
+Output written on report.pdf (3 pages, 503443 bytes).
 PDF statistics:
  172 PDF objects out of 1000 (max. 8388607)
  134 compressed objects within 2 object streams
