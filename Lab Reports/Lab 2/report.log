@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.11)  22 SEP 2020 18:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.9)  22 SEP 2020 22:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1470,37 +1470,25 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 9.19998pt on input line 65.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 13.24796pt on input line 65.
-
-
-LaTeX Warning: Reference `sec:results' on page 1 undefined on input line 75.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./figures/vdc.pdf): PDF inclusion: found PDF
- version <1.7>, but at most version <1.5> allowed
-<figures/vdc.pdf, id=34, 845.1575pt x 597.23125pt>
-File: figures/vdc.pdf Graphic file (type pdf)
-<use figures/vdc.pdf>
-Package pdftex.def Info: figures/vdc.pdf  used on input line 89.
-(pdftex.def)             Requested size: 239.40962pt x 169.17378pt.
+<figures/vdc.PNG, id=36, 284.56313pt x 199.49532pt>
+File: figures/vdc.PNG Graphic file (type png)
+<use figures/vdc.PNG>
+Package pdftex.def Info: figures/vdc.PNG  used on input line 88.
+(pdftex.def)             Requested size: 239.40962pt x 167.84886pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./figures/myr.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<figures/myr.pdf, id=35, 845.1575pt x 597.23125pt>
+<figures/myr.pdf, id=37, 845.1575pt x 597.23125pt>
 File: figures/myr.pdf Graphic file (type pdf)
 <use figures/myr.pdf>
-Package pdftex.def Info: figures/myr.pdf  used on input line 96.
+Package pdftex.def Info: figures/myr.pdf  used on input line 95.
 (pdftex.def)             Requested size: 239.40962pt x 169.17378pt.
-<figures/Oscilloscope.PNG, id=36, 2007.5pt x 1505.625pt>
+<figures/Oscilloscope.PNG, id=38, 2007.5pt x 1505.625pt>
 File: figures/Oscilloscope.PNG Graphic file (type png)
 <use figures/Oscilloscope.PNG>
-Package pdftex.def Info: figures/Oscilloscope.PNG  used on input line 103.
+Package pdftex.def Info: figures/Oscilloscope.PNG  used on input line 102.
 (pdftex.def)             Requested size: 239.40962pt x 179.54147pt.
-
-Underfull \vbox (badness 2591) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \footskip is too small (9.03374pt): 
 Make it at least 12.0pt.
@@ -1510,18 +1498,22 @@ This may cause the page layout to be inconsistent, however.
 [1{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figures/vdc.pdf>]
-<figures/V vs R.PNG, id=60, 350.5095pt x 198.14024pt>
+ <./figures/vdc.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
+
+ []
+
+<figures/V vs R.PNG, id=61, 350.5095pt x 198.14024pt>
 File: figures/V vs R.PNG Graphic file (type png)
 <use figures/V vs R.PNG>
-Package pdftex.def Info: figures/V vs R.PNG  used on input line 135.
+Package pdftex.def Info: figures/V vs R.PNG  used on input line 136.
 (pdftex.def)             Requested size: 239.40962pt x 135.33824pt.
-<figures/Vin vs Vout.PNG, id=62, 352.9185pt x 207.174pt>
+<figures/Vin vs Vout.PNG, id=63, 352.9185pt x 207.174pt>
 File: figures/Vin vs Vout.PNG Graphic file (type png)
 <use figures/Vin vs Vout.PNG>
-Package pdftex.def Info: figures/Vin vs Vout.PNG  used on input line 142.
+Package pdftex.def Info: figures/Vin vs Vout.PNG  used on input line 143.
 (pdftex.def)             Requested size: 239.40962pt x 140.54451pt.
- (c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1pplj.fd)
+(c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1pplj.fd)
 Underfull \hbox (badness 10000) in paragraph at lines 207--207
 []|\T1/pplj/b/n/10 nom.
  []
@@ -1541,37 +1533,31 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 212.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 6959A1DF7DBF584C05E08C53F8F3223E;289.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 38374 strings out of 480876
- 884119 string characters out of 5911487
- 1349709 words of memory out of 5000000
- 53152 multiletter control sequences out of 15000+600000
- 582717 words of font info for 104 fonts, out of 8000000 for 9000
+ 38380 strings out of 480876
+ 884128 string characters out of 5911488
+ 1350779 words of memory out of 5000000
+ 53153 multiletter control sequences out of 15000+600000
+ 583915 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,12n,102p,793b,737s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,12n,102p,793b,733s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fo
 nts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2020/texmf-dist/fonts/ty
 pe1/public/amsfonts/euler/eurb10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/pu
-blic/amsfonts/euler/eurm10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/f
-pl/fplbj8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/mathpazo/fplmr.pf
-b><c:/texlive/2020/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/20
-20/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texlive/2020/texmf-dist/f
-onts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/
-palatino/uplb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplr8a
-.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (3 pages, 672803 bytes).
+blic/amsfonts/euler/eurb7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/am
+sfonts/euler/eurm10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/fpl/fplb
+j8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><c:/t
+exlive/2020/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2020/texm
+f-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texlive/2020/texmf-dist/fonts/ty
+pe1/urw/helvetic/uhvb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatin
+o/uplb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c
+:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on report.pdf (3 pages, 580651 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
