@@ -56,7 +56,7 @@
 \begin{adjustwidth}{1.5in}{1.5in}
 {\small
 \noindent\textbf{Abstract.} \hspace{1em}
-	Applying a 10V DC power supply to a voltage divider circuit with two resistors in series, the voltage across both resistors remains constant while the voltage across a single resistor changes depending on the resistance. Using a myRIO  configured with the labVIEW software to change our input voltage and measure the voltage source and the resistor voltage. When connecting a arbitrary function generator to an oscilloscope, a variety of wave functions at 5Vpp had a period of 2.5ms.
+	Applying a 10V DC power supply to a voltage divider circuit with two resistors in series, the voltage across both resistors remains constant while the voltage across a single resistor changes depending on the resistance. Using a myRIO  configured with the labVIEW software to change our input voltage and measure the voltage source and the resistor voltage. When connecting an arbitrary function generator to an oscilloscope, a variety of wave functions at 5Vpp had a period of 2.5ms.
 }
 \end{adjustwidth}
 \vspace{9pt}
@@ -110,7 +110,7 @@ Typically, you will be asked to include in your report a theoretical prediction 
 
  In the first section of the lab the results showed that as the total resistance changed for the circuit the total voltage across the circuit was not changing. The voltage across the second resistor changed when the resistance changed. \autoref{tab:Tab1}
  
- 	After connecting the myRIO to the circuit and proceeding through the different input voltages we found that again the voltage through the entire circuit was constant no matter the total resistance and the voltage through the resistor depended on the amount of resistance.\autoref{tab:Tab2}
+ 	After connecting the myRIO to the circuit and proceeding through the different input voltages we found that, again, the voltage through the entire circuit was constant no matter the total resistance and the voltage through the resistor depended on the amount of resistance.\autoref{tab:Tab2}
  	
  	When observing the stable wave made by the function generator in the oscilloscope it was estimated that the peak-peak amplitude was a 5V with a period of 2.5ms. Even when changing the shape of the wave the period and amplitude stayed the same.  
  	  
@@ -118,13 +118,21 @@ Typically, you will be asked to include in your report a theoretical prediction 
 
 
 \begin{align}
-	\bm{VR1} = \bm{Vs} 
+V=iR
+
+
+\bm{VR1} = \bm{Vs} 
     	\left(
         	\frac{R1}{R1+R2}
         \right), 
 \end{align}
 \section{Discussion}
-This lab demonstrated 
+Above all else, this lab demonstrated the efficacy of what we learned in class lecture concerning the voltage divider equation and it made our group more familiar with the technology we will be continuously using throughout the semester and possibly in future careers. We have learned exactly what happens in a circuit that contained a voltage divider (two resistors in series with an outpot voltage that is a fraction of the input). During the initial portion of the lab when measuring voltage drops across the whole circuit vs. the resistors we would see consistent drops of 60%-30% during the latter measurements compared to the former which saw almost no voltage drop at all. 
+
+When using the myRIO software and pushing different source voltages through the various resistors the results were predictable and similar to the first part of the lab, with the voltages across the resistors being a fraction of the source voltage. Resistors 2 and 3 were at about a 50% voltage loss, and resistors 4 and 5 saw about a 40% drop. This further reinforces what we had learned about the properties of a voltage divider circuit. Speaking to other groups in the lab they saw more or less the same results.
+
+In our last section the group had trouble setting up the oscilloscope to produce a solid sine wave shape. After spending an inordinate amount of time we were able to achieve success and estimated, as stated above in our results section, that the peak amplitude was 5V. We shifted the wave to different shapes like a square wave and this did not change. 
+
 \begin{figure}
 	\centering
 	\includegraphics[width=.9\linewidth]{figures/V vs R.PNG}
