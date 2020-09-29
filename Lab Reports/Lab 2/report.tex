@@ -28,7 +28,7 @@
 		\hspace*{\fill}
 		Alex Blakely
 		\hspace*{\fill}
-		Ahmed Irfan
+		Irfan Ahmed
 		\hspace*{\fill}
 %		Fourth Author    % uncomment these two lines if there's a fourth author
 %		\hspace*{\fill}
@@ -70,9 +70,8 @@
 \section{Introduction} 
 \label{sec:introduction}
 
- ``Introduce what your question is. Explain why someone should find this interesting. Summarize what is currently known about the question. Introduce a little of what you found and how you found it. You should explain any ideas or techniques that are necessary for someone to understand your results section.''
-
-Typically, you will be asked to include in your report a theoretical prediction for comparison with your experimental results. Typically, this section is a good place for presenting that. You needn't always include every aspect of your derivation, but you should "sketch out" the process, hitting the "highlight" ideas an equations along the way. Typically there's no need to, say, plot the results here, since you'll be plotting them again alongside the data in the Results section (\autoref{sec:results}). 
+The voltage divider (shown in figure \ref{fig:circuit}) is a fundamental electronic circuit that allows an input voltage to be split into different output voltages using resistors. The output of such a circuit is described by equation \ref{eq:2}.\\
+The purpose of this lab is to better understand the voltage divider circuit, as well as the concepts of voltage and signal generation (as well as measurement). While observing the effects of different resistors on the output voltage, the team gained experience with using the myRIO in conjuction with a computer for realtime circuit measurements. The latter portion of the lab also enabled the team to use an oscilloscope to observe the qualities of a function supplied by a function generator.
 
 \section{Materials and Methods}
 
@@ -86,7 +85,7 @@ Typically, you will be asked to include in your report a theoretical prediction 
 	
 \begin{figure}
 	\centering
-	\includegraphics[width=.9\linewidth]{figures/vdc.pdf}
+	\includegraphics[width=.9\linewidth]{figures/vdc.PNG}
 	\caption{Voltage divider circuit}
 	\label{fig:circuit}
 \end{figure}
@@ -117,26 +116,21 @@ Typically, you will be asked to include in your report a theoretical prediction 
 \section{Equations}
 
 
-\begin{align}
-V=iR
+	\begin{equation}\label{eq:1}
+		 V=iR
+	\end{equation}
+\\
+	\begin{equation}\label{eq:2}
+		\bm{V_{out}} = \bm{V_{in}}\left(\frac{R2}{R1+R2}\right)
+	\end{equation}
 
-
-\bm{VR1} = \bm{Vs} 
-    	\left(
-        	\frac{R1}{R1+R2}
-        \right), 
-\end{align}
 \section{Discussion}
 Above all else, this lab demonstrated the efficacy of what we learned in class lecture concerning the voltage divider equation and it made our group more familiar with the technology we will be continuously using throughout the semester and possibly in future careers. We have learned exactly what happens in a circuit that contained a voltage divider (two resistors in series with an outpot voltage that is a fraction of the input). During the initial portion of the lab when measuring voltage drops across the whole circuit vs. the resistors, we would see consistent drops of 60%-30% during the latter measurements compared to the former which saw almost no voltage drop at all. 
 
 When using the myRIO software and pushing different source voltages through the various resistors the results were predictable and similar to the first part of the lab, with the voltages across the resistors being a fraction of the source voltage. Resistors 2 and 3 were at about a 50% voltage loss, and resistors 4 and 5 saw about a 40% drop. This further reinforces what we had learned about the properties of a voltage divider circuit. Speaking to other groups in the lab they observed the same results.
 
 In our last section the group had trouble setting up the oscilloscope to produce a solid sine wave shape. After spending an inordinate amount of time, we were able to achieve success and estimated, as stated above in our results section, that the peak amplitude was 5V. We shifted the wave to different shapes like a square wave and this did not change. 
-<<<<<<< HEAD
-This lab demonstrated 
-=======
 
->>>>>>> b667b07eed93567d7c55f1cb02bd3f4f795541df
 \begin{figure}
 	\centering
 	\includegraphics[width=.9\linewidth]{figures/V vs R.PNG}
@@ -152,17 +146,10 @@ This lab demonstrated
 \end{figure}
 
 \section{Author Contributions}
-<<<<<<< HEAD
 
 In this lab report, Austin created the figures and tables that were used as a visual representation of the data as well as several of the sections including the abstract, materials and methods, and results.
 The photographs were taken by Irfan and Alex during the experiment and they combined for the rest of the report including the introduction, discussion, and this very contributions section. Editing was a team effort in order to catch each other's mistakes and make the overall report as readable and professional as possible. 
-=======
-In this lab report, Austin created the figures and tables that were used as a visual representation of the data as well as several of the sections including the abstract, materials and methods, and results.
-The photographs were taken by Irfan and Alex during the experiment and they combined for the rest of the report including the introduction, discussion, and this very contributions section. Editing was a team effort in order to catch each other's mistakes and make the overall report as readable and professional as possible. 
 
->>>>>>> b667b07eed93567d7c55f1cb02bd3f4f795541df
-
- 
 \begin{table}
 	\begin{tabularx}{1\linewidth}{ lXXXXX|cXXX }
 		\hline
