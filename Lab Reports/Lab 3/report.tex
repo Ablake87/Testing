@@ -26,7 +26,7 @@
 		\hspace*{\fill}
 		Austin Piper
 		\hspace*{\fill}
-		Alex Blakely
+		Alex Blakley
 		\hspace*{\fill}
 		Ahmed Irfan
 		\hspace*{\fill}
@@ -56,12 +56,7 @@
 \begin{adjustwidth}{1.5in}{1.5in}
 {\small
 \noindent\textbf{Abstract.} \hspace{1em}
-	A BeagleBone Black (BBB) single-board open-source computer was implemented as a
-low-cost fully programmable pulse generator. The pulse generator makes use of the BBB
-Programmable Real-Time Unit (PRU) subsystem to achieve a deterministic temporal
-resolution of 5 ns, an RMS jitter of 290 ps and a timebase stability on the order of 10 ppm.
-A Python-based software framework has also been developed to simplify the usage of the
-pulse generator.
+	The purpose of this lab was to view and measure the response of the voltage across a capacitor in a RC circuit. After building the circuit on a breadboard we sent 1 volt across the completed circuit and we used the myRIO microcontroller in order to record the results. The output voltage and resulting graphs can be used to find the time constant.
 }
 \end{adjustwidth}
 \vspace{9pt}
@@ -70,14 +65,14 @@ pulse generator.
 ]
 
 %%% Body -------------------------
-\section{Summary} 
-\label{sec:summary}
-In this article ~\citep{Fedrizzi2015}, a BeagleBone Black single-board open source computer was used as a pulse generator in an effort to determine its overall accuracy and precision. The more expensive pulse generators are known to be both, but with the restrictions of budget this particular generator needed to be tested. This testing took the form of producing pulses at a set frequency with defined temporal offsets. Python is used to create parameters for the experiment and to measure and record the delays between the switching tasks of output timing pulses. The ability to use Python in this manner is another advantage that the BBB has over many commercial pulse generators.
 
 \section{Introduction} 
 \label{sec:introduction}
 
-The experiment found that, as expected, commercial competitors had an overall higher degree of precision and accuracy, they could not match the versatility offered by the BBB, which can receive the Python inputs. The price is also a factor that the commercial generators could not match. This means that the BeagleBone Black single-board open source computer can be effectively used by those in an academic setting as long as the accuracy is taken into account when collecting data for the experiment.  
+There are many variations of circuits used in the world of electronics in order to accomplish and power useful machines. The common RC circuit is used in devices like pacemakers, noise cancelling products, and timing circuits. These types of circuits are used because they can filter signals, blocking some and allowing others to pass through and therefore they are effective in their usage. 
+
+In this lab, we built a basic RC circuit on a breadboard with a single 100 kΩ resistor and a 10 µF capacitor. We hooked up the myRIO to the breadboard and, with the full circuit completed and grounded using jumper wires, we applied a DC voltage across the capacitor and the measurements were taken of both the source voltage and output voltage.  The advantage of using the myRIO is that we could pair this technology with the LabVIEW program in order to have a graph drafted, in real time, of both of the data streams we require in order to deepen our understanding of how the RC circuit reacts to a constant voltage over time. 
+
 
 \section{Materials and Methods}
 
