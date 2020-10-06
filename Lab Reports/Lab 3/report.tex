@@ -76,8 +76,6 @@ In this lab, we built a basic RC circuit on a breadboard with a single 100 kΩ r
 
 
 
-
-
 \section{Materials and Methods}
 
 This experiment started with the building of a circuit that had a 100 kΩ resistor and a 10 µF capacitor in series using a breadboard and jumper wires. Using a multimeter, both the capacitor and resistor were measured in order to ensure they, indeed, had the desired value of capacitance and resistance we needed for the experiment. After the myRIO was connected to our circuit we then began setting up the LabVIEW program in order to both control the source voltage supplied across the capacitor and to measure the output voltage over time. Using LabVIEW, we were able to grab the data and create a graph that showed both of the aforementioned voltages after about 6 time constants (6RC).
@@ -103,21 +101,34 @@ This experiment started with the building of a circuit that had a 100 kΩ resist
 You are required to describe each member's contributions to the laboratory exercise and report.
 
 
+\begin{figure}[bt]
+	\centering
+	\includegraphics[width=.9\linewidth]{figures/RC.PNG}
+	\caption{RC Circuit}
+	\label{fig:circuit}
+\end{figure}
 
+\begin{figure}[bt]
+	\centering
+	\includegraphics[width=.9\linewidth]{figures/RCgraph.pdf}
+	\caption{Voltage vs. Time}
+	\label{fig:RCgraph}
+\end{figure}
 
- 
 \begin{table}[bt]
 	\begin{tabularx}{1\linewidth}{ lXX }
 		\hline
-		 & \textbf{label 1} & \textbf{label 2} \\
+		 & \textbf{R (kΩ) } & \textbf{C (µF)} \\
 		\hline
-		nominal & $100$ & $10$ \\
-		measured & $99.4$ & $10.2$ \\
+		Nominal & $100$ & $10$ \\
+		Measured & $99.4$ & $10.2$ \\
 		\hline
 	\end{tabularx}
-	\caption{a table caption.}
+	\caption{Multimeter Measurements}
 	\label{tab:dummy}
 \end{table}
+
+
 
 
 \end{document}  
