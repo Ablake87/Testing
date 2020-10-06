@@ -4,6 +4,7 @@
 \usepackage{mypackages}
 \usepackage{mymacros}
 \usepackage{mycommands}
+\usepackage{textgreek}
 
 \begin{document}
 \thispagestyle{fancy1}
@@ -73,13 +74,9 @@ There are many variations of circuits used in the world of electronics in order 
 
 In this lab, we built a basic RC circuit on a breadboard with a single 100 kΩ resistor and a 10 µF capacitor. We hooked up the myRIO to the breadboard and, with the full circuit completed and grounded using jumper wires, we applied a DC voltage across the capacitor and the measurements were taken of both the source voltage and output voltage.  The advantage of using the myRIO is that we could pair this technology with the LabVIEW program in order to have a graph drafted, in real time, of both of the data streams we require in order to deepen our understanding of how the RC circuit reacts to a constant voltage over time. 
 
-\begin{figure}
-  \includegraphics[width=\linewidth]{/figures/RC_Circuit.PNG}
-  \caption{An RC Circuit}
-  \label{fig:rc1}
-\end{figure}
 
-Figure \ref{fig:rc1} An RC Circuit
+
+
 
 \section{Materials and Methods}
 
@@ -105,89 +102,17 @@ This experiment started with the building of a circuit that had a 100 kΩ resist
 
 You are required to describe each member's contributions to the laboratory exercise and report.
 
-%%% References -------------------------
-
-\bibliographystyle{plainnat}
-\bibliography{report}
-
-%%% Appendices -------------------------
-
-\appendix
-
-\section{Appendix: \LaTeX{} Tutorial}\label{sec:latex}
-
-I'm going to teach you how to use \LaTeX{} a little bit. Like how to cite a source, insert a graphic, and build tables. Follow along in the \texttt{report.tex} file.
-
-{\bfseries\color{red} Do not use this appendix as any sort of template for the report! Equations, figures, and tables should appear in the body of the report.} Delete this appendix before submitting your report.
-
-\subsection{Citing a Source}
-
-Let's cite a source. The source must be already saved as a BibTeX file (\texttt{.bib}) in the same directory as the \texttt{.tex} document. I have already created a sample \texttt{report.bib} file. (If you want to add and remove sources to this file, you may use a reference manager like BibDesk on a Mac or JabRef on a PC.)
-
-The next step is to cite the source, inline~\citep{Rowell1997}. And I can easily cite another reference~\citep{Ciesielski1997}.
-
-\subsection{Equations}
-
-Equations should appear in the body of the report, especially in the Introduction (\autoref{sec:introduction}), when describing your theoretical predictions. An equation should be part of a complete sentence.
-
-Here are some examples.
-
-We now see that
-\begin{align}
-	x = 1 .
-\end{align}
-
-Somehow, the following impossible equation hold:
-\begin{align} \label{eq:int}
-	\int_0^t x_2 \sin{x} dx = 
-	\begin{bmatrix}
-		1 & 0 & 8 \\
-		0 & x^7 \\
-		7 &
-	\end{bmatrix} .
-\end{align}
-We now see that 
-\begin{align}
-	\bm{x} = \bm{\alpha} 
-    \left( 
-    	\left(
-        	\frac{2}{3}
-        \right) + 
-        \frac{5}{6} 
-    \right) , 
-\end{align}
-where $\bm{\alpha}$ is the coefficient of stupidity.
-
-And this works too: $\frac{\partial x}{\partial y}$ .
-
-\begin{subequations}
-\begin{align*}
-	x &= 2 y & \text{(where $x>2$)} \\
-	y &= 4 x + 8 &
-\end{align*}
-\end{subequations}
-
-Later, you could refer to the equation \autoref{eq:int}.
-
-Or you could do it multiple times: \autoref{eq:int}.
-
-\subsection{Figures}
-It is easy enough to add a figure. In the subdirectory \texttt{figures}, I placed a file \texttt{data.pdf}. If we want to include it in the document, we use the following commands.
 
 
 
-\subsection{Tables}
-Tables can be a pain in \LaTeX{}. Here's a simple table.
-
-Notice (as in \autoref{tab:dummy}) that these things don't go where they're entered. Most of the time it's preferable to have a figure or table ``float'' such that it is at the top or bottom of a column.
  
 \begin{table}[bt]
 	\begin{tabularx}{1\linewidth}{ lXX }
 		\hline
 		 & \textbf{label 1} & \textbf{label 2} \\
 		\hline
-		Interesting thing & $5.1$ & $603$ \\
-		Thing of interest & pigtails & $x^3$ \\
+		nominal & $100$ & $10$ \\
+		measured & $99.4$ & $10.2$ \\
 		\hline
 	\end{tabularx}
 	\caption{a table caption.}
