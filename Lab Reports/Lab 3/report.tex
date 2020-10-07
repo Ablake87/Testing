@@ -82,23 +82,15 @@ This experiment started with the building of a circuit that had a 100 kΩ resist
 \section{Results}
 \label{sec:results}
 
-``To write the results section, use the figures and tables as a guide. Start by outlining, in point form, what you found, going slowly through each part of the figures. Then take the points and group them into paragraphs, and finally order the points within each paragraph. Present the data as fully as possible, including stuff that at the moment does not quite make sense.
+   
+By conducting a circuit analysis of our circuit seen in \autoref{fig:circuit},
+we found the equation for voltage across the capacitor. Using the that equation we were able to derive the equation for τ. Once we had our equations we used the data collected from LABVIEW and plotted our Vc in \autoref{fig:VC}.
+On the same plot we compared the Vs and Vo vs time \autoref{fig:RCgraph} then after linearizing our data we were able to find out time constant value τ = 1.01325. \autoref{fig:Linear}
 
-``Verbs in the results section are usually in the past tense. Only established scientific knowledge is written about in the present tense, `the world is round,' for example. You cannot presume that your own data are part of the body of established scientific knowledge, and so when you describe your own results, use the past tense, `a band of 1.3 KB was seen,' for example. There are, however, exceptions to this general rule. It is acceptable to say, `Table 3 shows the sizes of the DNA fragments in our preparation.' It is also acceptable to say, `In a 1991 paper, Ebright and coworkers used PCR to mutagenize DNA.' \ldots
 
-``Some readers begin by scanning the figures first. The figures, with the legends, should provide a self-explanatory overview of your data. Decide what the data show, then create figures which highlight the most important points of your paper.
 
-``Tables are used to present repetitive data that is numerical. Graphs or illustrations, collectively called figures, are used to present numerical trends, raw data (like a picture of a gel), or a model that explains your work.
 
-``When you prepare your figures and tables, keep in mind that it is significantly more expensive for journals to publish figures and tables than text, so try to present the data in a way that is worthy of such added expense.''
-
-\section{Discussion}
-
-``This is the section of the paper for you to show off your understanding of the data. You should summarize what you found. Explain how this relates to what others have found. Explain the implications.''
-
-\section{Author Contributions}
-
-You are required to describe each member's contributions to the laboratory exercise and report.
+ 
 
 
 \begin{figure}[bt]
@@ -114,6 +106,19 @@ You are required to describe each member's contributions to the laboratory exerc
 	\caption{Voltage vs. Time}
 	\label{fig:RCgraph}
 \end{figure}
+\begin{figure}[bt]
+	\centering
+	\includegraphics[width=.9\linewidth]{figures/Linear.PNG}
+	\caption{Linearized data}
+	\label{fig:Linear}
+\end{figure}
+
+\begin{figure}[bt]
+	\centering
+	\includegraphics[width=.9\linewidth]{figures/vc.jpg}
+	\caption{v_{c} vs. Time}
+	\label{fig:VC}
+\end{figure}
 
 \begin{table}[bt]
 	\begin{tabularx}{1\linewidth}{ lXX }
@@ -125,8 +130,38 @@ You are required to describe each member's contributions to the laboratory exerc
 		\hline
 	\end{tabularx}
 	\caption{Multimeter Measurements}
-	\label{tab:dummy}
+	\label{tab:TAB1}
 \end{table}
+\section{Discussion}
+
+
+``This is the section of the paper for you to show off your understanding of the data. You should summarize what you found. Explain how this relates to what others have found. Explain the implications.''
+
+\section{Equations}
+
+\begin{align*}
+	V_{c}(t) = V_{s}
+	\left(
+	1- e^\frac{-t}{\tau}
+	\right)
+\end{align*}
+
+\begin{align*}
+	\tau = \frac{-t}{ln
+	\left(
+	1- \frac{V_{c}\left(
+	t
+	\right)}{V_{s}\left(
+	t
+	\right)}}
+        \right)
+\end{align*}
+
+\section{Author Contributions}
+Alex created the voltage versus time graph. He also wrote the abstract, the introduction, and wrote the materials and methods section. Austin applied the photos and the table. Irfan made the circuit diagram
+
+
+
 
 
 
