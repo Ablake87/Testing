@@ -83,15 +83,20 @@ This experiment started with the building of a circuit that had a 100 kΩ resist
 \label{sec:results}
 
    
-By conducting a circuit analysis of our circuit seen in \autoref{fig:circuit},
-we found the equation for voltage across the capacitor. Using the that equation we were able to derive the equation for τ. Once we had our equations we used the data collected from LABVIEW and plotted our Vc in \autoref{fig:VC}.
-On the same plot we compared the Vs and Vo vs time \autoref{fig:RCgraph} then after linearizing our data we were able to find out time constant value τ = 1.01325. \autoref{fig:Linear}
+By conducting a circuit analysis of our circuit seen in \autoref{fig:diagram},
+we solved the first order differential equation and found the equation for voltage across the capacitor (Vc). Using the that equation we were able to derive the equation for τ. Once we had our equations we used the data collected from LABVIEW and plotted our Vc in \autoref{fig:VC}.
+On the same plot we compared the Vs and Vo vs time \autoref{fig:RCgraph} then after linearizing our data we were able to find out time constant τ = 1.01325. \autoref{fig:Linear}
 
 
 
 
  
-
+\begin{figure}[bt]
+	\centering
+	\includegraphics[width=.9\linewidth]{figures/diagram.PNG}
+	\caption{Circuit Diagram}
+	\label{fig:diagram}
+\end{figure}
 
 \begin{figure}[bt]
 	\centering
@@ -120,24 +125,6 @@ On the same plot we compared the Vs and Vo vs time \autoref{fig:RCgraph} then af
 	\label{fig:VC}
 \end{figure}
 
-\begin{table}[bt]
-	\begin{tabularx}{1\linewidth}{ lXX }
-		\hline
-		 & \textbf{R (kΩ) } & \textbf{C (µF)} \\
-		\hline
-		Nominal & $100$ & $10$ \\
-		Measured & $99.4$ & $10.2$ \\
-		\hline
-	\end{tabularx}
-	\caption{Multimeter Measurements}
-	\label{tab:TAB1}
-\end{table}
-\section{Discussion}
-
-This lab showed that the response of a RC circuit by measuring the time response of the voltage across a 10µF capacitor. We applied a voltage source and measured the output voltage using the myRIO. Observing the data showed us that our capacitor was gaining voltage over time. Our time constant was larger than one therefore it took a fairly long time to charge the capacitor. 
-
-
-
 \section{Equations}
 
 \begin{align*}
@@ -157,6 +144,25 @@ This lab showed that the response of a RC circuit by measuring the time response
 	\right)}}
         \right)
 \end{align*}
+\begin{table}[bt]
+	\begin{tabularx}{1\linewidth}{ lXX }
+		\hline
+		 & \textbf{R (kΩ) } & \textbf{C (µF)} \\
+		\hline
+		Nominal & $100$ & $10$ \\
+		Measured & $99.4$ & $10.2$ \\
+		\hline
+	\end{tabularx}
+	\caption{Multimeter Measurements}
+	\label{tab:TAB1}
+\end{table}
+\section{Discussion}
+
+This lab showed that the response of a RC circuit by measuring the time response of the voltage across a 10µF capacitor. We applied a voltage source and measured the output voltage using the myRIO. Observing the data showed us that our capacitor was gaining voltage over time. Our time constant was larger than one therefore it took a fairly long time to charge the capacitor. 
+
+
+
+
 
 \section{Author Contributions}
 Alex created the voltage versus time graph. He also wrote the abstract, the introduction, and wrote the materials and methods section. Austin applied the photos and the table. He also wrote the results and discussion sections. Irfan made the circuit diagram and did the circuir analysis.
