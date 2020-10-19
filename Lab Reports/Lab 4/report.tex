@@ -4,6 +4,8 @@
 \usepackage{mypackages}
 \usepackage{mymacros}
 \usepackage{mycommands}
+\usepackage{url}
+\usepackage{textgreek}
 
 \begin{document}
 \thispagestyle{fancy1}
@@ -56,7 +58,7 @@
 \begin{adjustwidth}{1.5in}{1.5in}
 {\small
 \noindent\textbf{Abstract.} \hspace{1em}
-	Using a single-board open source computer called the BBB (BBB)and a Python-based code structure,a pulse generator that is entirely programmable and very low cost was used to control timing. Making use of the computers' programmable real-time unit the engineers are able to achieve a revist period of 5 ns, a standard deviation of 290ps, as well as a frequency stability at 10ppm.
+	In this lab exercise, we measured the steady-state response of the output voltage of an RLC circuit with a sinusoidal voltage source. We recorded the data by hand, and used MATLAB to plot the data and derive a model. Finally, we compared the analytic model to the experimental data.
 }
 \end{adjustwidth}
 \vspace{9pt}
@@ -70,9 +72,16 @@
 \section{Introduction} 
 \label{sec:introduction}
 
-``Introduce what your question is. Explain why someone should find this interesting. Summarize what is currently known about the question. Introduce a little of what you found and how you found it. You should explain any ideas or techniques that are necessary for someone to understand your results section.''
+An RLC circuit is a circuit that contains a resistor, and inductor, and a capacitor. This class of circuits is often used as oscillators. The characteristics of this type of circuit make it useful in signal filtering.
 
-Typically, you will be asked to include in your report a theoretical prediction for comparison with your experimental results. Typically, this section is a good place for presenting that. You needn't always include every aspect of your derivation, but you should "sketch out" the process, hitting the "highlight" ideas an equations along the way. Typically there's no need to, say, plot the results here, since you'll be plotting them again alongside the data in the Results section (\autoref{sec:results}). 
+While, by definition, this kind of circuit can be any combination of these three circuit elements, in this experiment we put them together in Series. As \autoref{fig:diagram} shows, we assume that the voltage source (a signal generator) has a resistance Rs (which has a value of 50 \Omega).
+
+\begin{figure}[bt]
+	\centering
+	\includegraphics[width=.9\linewidth]{figures/RLCDiagram.JPG}
+	\caption{The RLC Circuit}
+	\label{fig:diagram}
+\end{figure}
 
 \section{Materials and Methods}
 
@@ -97,8 +106,8 @@ Don't use a figure from my description unless you properly cite it! A proper cit
 \begin{figure}[bt]
 	\centering
 	\includegraphics[width=.9\linewidth]{figures/RLCcircuit.PNG}
-	\caption{RLC Circuit}
-	\label{fig:data}
+	\caption{Our RLC Circuit}
+	\label{fig:diagram2}
 \end{figure}
 ``To write the results section, use the figures and tables as a guide. Start by outlining, in point form, what you found, going slowly through each part of the figures. Then take the points and group them into paragraphs, and finally order the points within each paragraph. Present the data as fully as possible, including stuff that at the moment does not quite make sense.
 
@@ -118,9 +127,26 @@ Don't use a figure from my description unless you properly cite it! A proper cit
 
 You are required to describe each member's contributions to the laboratory exercise and report.
 
+\section{Equations}
 
+\begin{align*}
+	
+	 r(\omega) &= |\frac{1}{\sqrt{\left(1 - \omega^2*L*C\right) + j*\omega^2*C^2\left(R_{s}+R\right)^2}}|
+	 
+	 \Phi(\omega) = tan^-1(\frac{\omega*C*\left(R_{s}+R\right)}{1-\omega^2*L*C})
+\end{align*}
 
-
-
+\begin{table}[bt]
+	\begin{tabularx}{1\linewidth}{ lXX }
+		\hline
+		 & \textbf{R (Ω)} & \textbf{C (pF)} \\
+		\hline
+		nominal & $78$ & $700$ \\
+		measured & $66.78$ & $690$ \\
+		\hline
+	\end{tabularx}
+	\caption{Multimeter Measurements}
+	\label{tab:Tab1}
+\end{table}
 
 \end{document}  
