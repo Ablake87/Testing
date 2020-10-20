@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.11)  20 OCT 2020 12:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.11)  20 OCT 2020 12:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1639,14 +1639,7 @@ ns
 Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/
 *}. on input line 69.
 )
-(./report.aux
-
-LaTeX Warning: Label `fig:rvsF' multiply defined.
-
-
-LaTeX Warning: Label `fig:rvsF' multiply defined.
-
-)
+(./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1890,16 +1883,16 @@ This may cause the page layout to be inconsistent, however.
 
 
  <./figures/RLCDiagram.jpg> <./figures/RLCcircuit.png>]
-<figures/rvsF.png, id=64, 364.635pt x 220.971pt>
+<figures/rvsF.png, id=65, 393.762pt x 213.087pt>
 File: figures/rvsF.png Graphic file (type png)
 <use figures/rvsF.png>
 Package pdftex.def Info: figures/rvsF.png  used on input line 139.
-(pdftex.def)             Requested size: 239.40962pt x 145.08603pt.
-<figures/phivsF.png, id=66, 362.007pt x 217.467pt>
+(pdftex.def)             Requested size: 239.40962pt x 129.56018pt.
+<figures/phivsF.png, id=67, 500.87125pt x 289.08pt>
 File: figures/phivsF.png Graphic file (type png)
 <use figures/phivsF.png>
 Package pdftex.def Info: figures/phivsF.png  used on input line 146.
-(pdftex.def)             Requested size: 239.40962pt x 143.82065pt.
+(pdftex.def)             Requested size: 239.40962pt x 138.17897pt.
 
 ! Missing $ inserted.
 <inserted text> 
@@ -1933,12 +1926,12 @@ l.147 	\caption{\Phi vs Frequency}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-<figures/img1.png, id=67, 2023.56pt x 1517.67pt>
+<figures/img1.png, id=68, 2023.56pt x 1517.67pt>
 File: figures/img1.png Graphic file (type png)
 <use figures/img1.png>
 Package pdftex.def Info: figures/img1.png  used on input line 153.
 (pdftex.def)             Requested size: 239.40962pt x 179.54202pt.
-<figures/img2.png, id=68, 2023.56pt x 1517.67pt>
+<figures/img2.png, id=69, 2023.56pt x 1517.67pt>
 File: figures/img2.png Graphic file (type png)
 <use figures/img2.png>
 Package pdftex.def Info: figures/img2.png  used on input line 160.
@@ -2108,6 +2101,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--284
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
+\T1/pplj/b/n/10 Shift (de-
+ []
+
+
 AED: lastpage setting LastPage
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 289.
@@ -2127,17 +2125,17 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 39557 strings out of 480876
- 903628 string characters out of 5911487
- 1361867 words of memory out of 5000000
- 54294 multiletter control sequences out of 15000+600000
+ 39559 strings out of 480876
+ 903650 string characters out of 5911487
+ 1362974 words of memory out of 5000000
+ 54296 multiletter control sequences out of 15000+600000
  585651 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,11n,102p,916b,725s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 74i,11n,102p,1053b,725s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/
@@ -2151,10 +2149,10 @@ ist/fonts/type1/public/cbfonts/grmn1000.pfb><c:/texlive/2020/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palati
 no/uplb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><
 c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (3 pages, 1260191 bytes).
+Output written on report.pdf (3 pages, 1212158 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
+ 147 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
  30 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
