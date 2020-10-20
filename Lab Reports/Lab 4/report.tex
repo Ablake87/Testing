@@ -88,20 +88,33 @@ In this lab, we observed both the input signal and the output signal of this cir
 
 \section{Materials and Methods}
 
-``This is like a cooking recipe. Include enough detail so that someone can repeat the experiment. It is important that the reader be able to interpret the results knowing the context in which they were obtained.
-
-``The Materials and Methods section should be written in the past tense, since your experiments are completed at the time you are writing your paper.''
-
-Here are some things you don't want to do in this section.
-
 \begin{enumerate}
 \item 
-Don't simply copy and paste material from my description. 
+1 LabVIEW and MATLAB compatible device 
 \item 
-Don't simply list the procedure in bullet points (although some lists are fine). I want a description in \emph{your} words.
+1 myRIO microcontroller
 \item
-Don't use a figure from my description unless you properly cite it! A proper citation would be \citep[p.32]{Picone2018}.
+1 breadboard
+\item
+1 BNC Y- or T-connector
+\item
+2 BNC-to-allifator cables
+\item
+4 male jumper wires
+\item
+100mH inductor
+\item
+700 pF capacitor
+\item
+multimeter
+\item
+oscilloscope
+\item
+function generator
 \end{enumerate}
+
+The RLC circuit (figures 1 and 2) was built after measuring both the resistance of the resistor (noting that the internal resistance of the function generator was fifty ohms) and the capacitance of the capacitor. After its construction, jumpers were inserted to measure both the input voltage of the function generator and the output voltage using the LabVIEW software. After setting the function generator to a sinusoidal input at 1000 Hz (1kHz), we began making our recordings of the data including the phase shift and output voltage. We went from 1 kHz to 50,000 kHz intermittently in order to see how the amplitudes and phase shifts viewed on the oscilloscope were affected by different frequencies along the way. After each different frequency setting it was important to view both the input and output sinusoids so that any patterns could be taken note of.  
+
 
 \section{Results}
 \label{sec:results}
@@ -112,27 +125,32 @@ Don't use a figure from my description unless you properly cite it! A proper cit
 	\caption{Our RLC Circuit}
 	\label{fig:diagram2}
 \end{figure}
-``To write the results section, use the figures and tables as a guide. Start by outlining, in point form, what you found, going slowly through each part of the figures. Then take the points and group them into paragraphs, and finally order the points within each paragraph. Present the data as fully as possible, including stuff that at the moment does not quite make sense.
-
-``Verbs in the results section are usually in the past tense. Only established scientific knowledge is written about in the present tense, `the world is round,' for example. You cannot presume that your own data are part of the body of established scientific knowledge, and so when you describe your own results, use the past tense, `a band of 1.3 KB was seen,' for example. There are, however, exceptions to this general rule. It is acceptable to say, `Table 3 shows the sizes of the DNA fragments in our preparation.' It is also acceptable to say, `In a 1991 paper, Ebright and coworkers used PCR to mutagenize DNA.' \ldots
-
-``Some readers begin by scanning the figures first. The figures, with the legends, should provide a self-explanatory overview of your data. Decide what the data show, then create figures which highlight the most important points of your paper.
-
-``Tables are used to present repetitive data that is numerical. Graphs or illustrations, collectively called figures, are used to present numerical trends, raw data (like a picture of a gel), or a model that explains your work.
-
-``When you prepare your figures and tables, keep in mind that it is significantly more expensive for journals to publish figures and tables than text, so try to present the data in a way that is worthy of such added expense.''
+This lab produced four different data streams that were recorded by our group: the actual frequencies of the sinusoidal outputs and inputs, the peak-to-peak amplitudes of the of the input and output voltages, and the time lags between them. Using these data streams and the recorded phase shifts of each of the frequencies we were able to view when the expected resonance occurred and the time lags decreasing from the starting 1 kHz to our ultimate 50000 kHz. Our data showed the physical manifestation of resonance in terms of sinusoidal output and input waves, where they continually become more and more out of phase with one another due to the capacitor and inductor’s relationship to one another until a certain frequency is reached, where they cancel each other out in a sense, and the phase is back in line with its original sinusoid. We saw this occurrence at about 600 kHz. 
 
 \section{Discussion}
 
-``This is the section of the paper for you to show off your understanding of the data. You should summarize what you found. Explain how this relates to what others have found. Explain the implications.''
+A common real-world example of a circuit’s transient response leading to a steady state is the flip of a light switch. A sudden input of voltage will take some amount of time for the steady state of the circuit to be reached and this is what we see with our RLC circuit in this lab. As we applied increasingly large frequencies to the circuit, we witnessed phase shift of the sinusoids increase up to 90 degrees as we approached 600 kHz as the output voltage decreased in kind. For a series circuit at what is known as resonance, both the capacitance and inductive reactance would be equal, meaning that the phase angle (phase shift) would be at zero.  
 
+\begin{figure}[bt]
+	\centering
+	\includegraphics[width=.9\linewidth]{figures/rvsF.png}
+	\caption{r vs Frequency}
+	\label{fig:rvsF}
+\end{figure}
+
+\begin{figure}[bt]
+	\centering
+	\includegraphics[width=.9\linewidth]{figures/phivsF.png}
+	\caption{\Phi vs Frequency}
+	\label{fig:phivsF}
+\end{figure}
 \section{Author Contributions}
 
 You are required to describe each member's contributions to the laboratory exercise and report.
 
 \section{Equations}
 
-<<<<<<< HEAD
+
 \begin{align*}
 	
 	 r(\omega) &= |\frac{1}{\sqrt{\left(1 - \omega^2*L*C\right) + j*\omega^2*C^2\left(R_{s}+R\right)^2}}|
@@ -152,10 +170,6 @@ You are required to describe each member's contributions to the laboratory exerc
 	\caption{Multimeter Measurements}
 	\label{tab:Tab1}
 \end{table}
-=======
 
-
-
->>>>>>> f4c25fc5199915e7a7f00c1dcdd380b5ab25e5be
 
 \end{document}  
