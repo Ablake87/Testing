@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.11)  20 OCT 2020 08:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.14)  20 OCT 2020 10:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -158,7 +158,7 @@ LaTeX Info: Redefining \cite on input line 694.
 Package: expl3 2020-09-06 L3 programming layer (loader) 
 
 (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2020-09-11 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count189
 \l__pdf_internal_box=\box49
 ))
@@ -1014,7 +1014,7 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 Package: caption 2020/09/02 v3.5a Customizing captions (AR)
 
 (c:/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/08/30 v2.0 caption3 kernel (AR)
+Package: caption3 2020/09/11 v2.0b caption3 kernel (AR)
 \captionmargin=\dimen351
 \captionmargin@=\dimen352
 \captionwidth=\dimen353
@@ -1927,7 +1927,7 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 Runaway argument?
- 
+ r(\omega ) &= |\frac {1}{\sqrt {\left (1 - \omega ^2*L*C\right ) + j\ETC.
 ! Paragraph ended before \align* was complete.
 <to be read again> 
                    \par 
@@ -1967,33 +1967,7 @@ So I shall assume that you typed `$$' both times.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.156 	 r(\omega
-                ) &= |\frac{1}{\sqrt{\left(1 - \omega^2*L*C\right) + j*\omeg...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Misplaced alignment tab character &.
-l.156 	 r(\omega) &
-                   = |\frac{1}{\sqrt{\left(1 - \omega^2*L*C\right) + j*\omeg...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.157 	
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.158 	 \Phi
+l.156 	 \Phi
             (\omega) = tan^-1(\frac{\omega*C*\left(R_{s}+R\right)}{1-\omega^...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2001,7 +1975,7 @@ you left one out. Proceed, with fingers crossed.
 ! Misplaced \cr.
 \math@cr@@@ ->\cr 
                   
-l.159 \end{align*}
+l.157 \end{align*}
                   
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2012,7 +1986,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \noalign.
 \math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
                                                   {\vskip #1\relax }
-l.159 \end{align*}
+l.157 \end{align*}
                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2020,7 +1994,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.159 \end{align*}
+l.157 \end{align*}
                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2028,7 +2002,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.159 \end{align*}
+l.157 \end{align*}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2039,7 +2013,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \math@cr@@ ...th@cr@@@ \noalign {\vskip #1\relax }
                                                   
-l.159 \end{align*}
+l.157 \end{align*}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2050,7 +2024,7 @@ deleted material, e.g., by typing `I$}'.
 ! Misplaced \noalign.
 \black@ #1->\noalign 
                      {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
-l.159 \end{align*}
+l.157 \end{align*}
                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2058,7 +2032,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra }, or forgotten \endgroup.
 \endalign ->\math@cr \black@ \totwidth@ \egroup 
                                                 \ifingather@ \restorealignst...
-l.159 \end{align*}
+l.157 \end{align*}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2069,7 +2043,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.159 \end{align*}
+l.157 \end{align*}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2080,7 +2054,7 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.159 \end{align*}
+l.157 \end{align*}
                   
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -2088,13 +2062,13 @@ So I shall assume that you typed `$$' both times.
 
 AED: lastpage setting LastPage
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 175.
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 173.
 [2 <./figures/RvsF.png> <./figures/phivsF.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 9E2ECC47F44E710CE9C7E3B0D2D7A5A4;289.
 
@@ -2103,30 +2077,29 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 39539 strings out of 480876
- 903344 string characters out of 5911487
- 1331782 words of memory out of 5000000
- 54283 multiletter control sequences out of 15000+600000
- 585651 words of font info for 113 fonts, out of 8000000 for 9000
+ 39541 strings out of 480876
+ 903394 string characters out of 5911487
+ 1331988 words of memory out of 5000000
+ 54287 multiletter control sequences out of 15000+600000
+ 585249 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,11n,102p,916b,725s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/
-public/amsfonts/euler/eufm10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public
-/amsfonts/euler/eufm7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfon
-ts/euler/eurm10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/eul
-er/eurm7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eusm
-10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texli
-ve/2020/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texlive/2020/texmf-d
-ist/fonts/type1/public/cbfonts/grmn1000.pfb><c:/texlive/2020/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palati
-no/uplb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><
-c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (2 pages, 417218 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2020/texmf-dist/fon
+ts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2020/texmf-dist/fonts/typ
+e1/public/amsfonts/euler/eufm7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/publ
+ic/amsfonts/euler/eurm10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/ams
+fonts/euler/eurm7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/fpl/fplrc8
+a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texli
+ve/2020/texmf-dist/fonts/type1/public/cbfonts/grmn1000.pfb><c:/texlive/2020/tex
+mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2020/texmf-dist/fonts/t
+ype1/urw/palatino/uplb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palati
+no/uplr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+
+Output written on report.pdf (2 pages, 407815 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
+ 126 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
  25 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
