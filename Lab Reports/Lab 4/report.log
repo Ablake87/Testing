@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.11)  20 OCT 2020 11:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.11)  20 OCT 2020 12:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1888,11 +1888,11 @@ File: figures/rvsF.png Graphic file (type png)
 <use figures/rvsF.png>
 Package pdftex.def Info: figures/rvsF.png  used on input line 139.
 (pdftex.def)             Requested size: 239.40962pt x 145.08603pt.
-<figures/phivsF.png, id=66, 500.87125pt x 289.08pt>
+<figures/phivsF.png, id=66, 362.007pt x 217.467pt>
 File: figures/phivsF.png Graphic file (type png)
 <use figures/phivsF.png>
 Package pdftex.def Info: figures/phivsF.png  used on input line 146.
-(pdftex.def)             Requested size: 239.40962pt x 138.17897pt.
+(pdftex.def)             Requested size: 239.40962pt x 143.82065pt.
 
 ! Missing $ inserted.
 <inserted text> 
@@ -2128,7 +2128,7 @@ ist/fonts/type1/public/cbfonts/grmn1000.pfb><c:/texlive/2020/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palati
 no/uplb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><
 c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (2 pages, 423097 bytes).
+Output written on report.pdf (2 pages, 471883 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  111 compressed objects within 2 object streams
