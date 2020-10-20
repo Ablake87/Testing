@@ -15,7 +15,7 @@
 	\vspace{3pt}
 	% Title:
 	{\sffamily\bfseries\Large
-		Report for Laboratory One: 
+		Report for Laboratory Five: AC to DC Conversion
 	} \\
 	{\color{gray}
 		\vspace{3pt}
@@ -28,7 +28,7 @@
 		\hspace*{\fill}
 		Alex Blakely
 		\hspace*{\fill}
-		Ahmed Irfan
+		Irfan Ahmed
 		\hspace*{\fill}
 %		Fourth Author    % uncomment these two lines if there's a fourth author
 %		\hspace*{\fill}
@@ -56,12 +56,7 @@
 \begin{adjustwidth}{1.5in}{1.5in}
 {\small
 \noindent\textbf{Abstract.} \hspace{1em}
-	A BeagleBone Black (BBB) single-board open-source computer was implemented as a
-low-cost fully programmable pulse generator. The pulse generator makes use of the BBB
-Programmable Real-Time Unit (PRU) subsystem to achieve a deterministic temporal
-resolution of 5 ns, an RMS jitter of 290 ps and a timebase stability on the order of 10 ppm.
-A Python-based software framework has also been developed to simplify the usage of the
-pulse generator.
+	We used a full wave bridge rectifier circuit to convert a sinusoidal (AC) signal to DC output. We measured the timed response data and completed a circuit analysis to find the theoretical response. Finally, we compare the theoretical and experimental findings of the lab and discuss the meaning behind it all.
 }
 \end{adjustwidth}
 \vspace{9pt}
@@ -70,10 +65,6 @@ pulse generator.
 ]
 
 %%% Body -------------------------
-\section{Summary} 
-\label{sec:summary}
-In this article ~\citep{Fedrizzi2015}, a BeagleBone Black single-board open source computer was used as a pulse generator in an effort to determine its overall accuracy and precision. The more expensive pulse generators are known to be both, but with the restrictions of budget this particular generator needed to be tested. This testing took the form of producing pulses at a set frequency with defined temporal offsets. Python is used to create parameters for the experiment and to measure and record the delays between the switching tasks of output timing pulses. The ability to use Python in this manner is another advantage that the BBB has over many commercial pulse generators.
-
 \section{Introduction} 
 \label{sec:introduction}
 
