@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.11)  20 OCT 2020 11:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.11)  20 OCT 2020 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1968,13 +1968,13 @@ So I shall assume that you typed `$$' both times.
 <inserted text> 
                 $
 l.156 	 r(\omega
-                ) &= |\frac{1}{\sqrt{\left(1 - \omega^2*L*C\right) + j*\omeg...
+                ) &= |\frac{1}{\sqrt{\left(1 - \omega^2*L*C\right)^2 + j*\om...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
 l.156 	 r(\omega) &
-                   = |\frac{1}{\sqrt{\left(1 - \omega^2*L*C\right) + j*\omeg...
+                   = |\frac{1}{\sqrt{\left(1 - \omega^2*L*C\right)^2 + j*\om...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2128,7 +2128,7 @@ ist/fonts/type1/public/cbfonts/grmn1000.pfb><c:/texlive/2020/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palati
 no/uplb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><
 c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (2 pages, 431231 bytes).
+Output written on report.pdf (2 pages, 431220 bytes).
 PDF statistics:
  135 PDF objects out of 1000 (max. 8388607)
  109 compressed objects within 2 object streams
