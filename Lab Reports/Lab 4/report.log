@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.11)  20 OCT 2020 12:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.11)  20 OCT 2020 12:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1639,7 +1639,14 @@ ns
 Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/
 *}. on input line 69.
 )
-(./report.aux)
+(./report.aux
+
+LaTeX Warning: Label `fig:rvsF' multiply defined.
+
+
+LaTeX Warning: Label `fig:rvsF' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1926,12 +1933,22 @@ l.147 	\caption{\Phi vs Frequency}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+<figures/img1.png, id=67, 2023.56pt x 1517.67pt>
+File: figures/img1.png Graphic file (type png)
+<use figures/img1.png>
+Package pdftex.def Info: figures/img1.png  used on input line 153.
+(pdftex.def)             Requested size: 239.40962pt x 179.54202pt.
+<figures/img2.png, id=68, 2023.56pt x 1517.67pt>
+File: figures/img2.png Graphic file (type png)
+<use figures/img2.png>
+Package pdftex.def Info: figures/img2.png  used on input line 160.
+(pdftex.def)             Requested size: 239.40962pt x 179.54202pt.
 Runaway argument?
  
 ! Paragraph ended before \align* was complete.
 <to be read again> 
                    \par 
-l.158 	
+l.172 	
        
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1940,7 +1957,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.158 	
+l.172 	
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1948,7 +1965,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.158 	
+l.172 	
        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1959,7 +1976,7 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \par 
-l.158 	
+l.172 	
        
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -1967,13 +1984,13 @@ So I shall assume that you typed `$$' both times.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.159 	 r(\omega
+l.173 	 r(\omega
                 ) &= |\frac{1}{\sqrt{\left(1 - \omega^2*L*C\right)^2 + j*\om...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.159 	 r(\omega) &
+l.173 	 r(\omega) &
                    = |\frac{1}{\sqrt{\left(1 - \omega^2*L*C\right)^2 + j*\om...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1985,7 +2002,7 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.160 	
+l.174 	
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1993,7 +2010,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.161 	 \Phi
+l.175 	 \Phi
             (\omega) = tan^-1(\frac{\omega*C*\left(R_{s}+R\right)}{1-\omega^...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2001,7 +2018,7 @@ you left one out. Proceed, with fingers crossed.
 ! Misplaced \cr.
 \math@cr@@@ ->\cr 
                   
-l.162 \end{align*}
+l.176 \end{align*}
                   
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2012,7 +2029,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced \noalign.
 \math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
                                                   {\vskip #1\relax }
-l.162 \end{align*}
+l.176 \end{align*}
                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2020,7 +2037,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.162 \end{align*}
+l.176 \end{align*}
                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2028,7 +2045,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.162 \end{align*}
+l.176 \end{align*}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2039,7 +2056,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \math@cr@@ ...th@cr@@@ \noalign {\vskip #1\relax }
                                                   
-l.162 \end{align*}
+l.176 \end{align*}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2050,7 +2067,7 @@ deleted material, e.g., by typing `I$}'.
 ! Misplaced \noalign.
 \black@ #1->\noalign 
                      {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
-l.162 \end{align*}
+l.176 \end{align*}
                   
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2058,7 +2075,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Extra }, or forgotten \endgroup.
 \endalign ->\math@cr \black@ \totwidth@ \egroup 
                                                 \ifingather@ \restorealignst...
-l.162 \end{align*}
+l.176 \end{align*}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2069,7 +2086,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.162 \end{align*}
+l.176 \end{align*}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2080,38 +2097,44 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.162 \end{align*}
+l.176 \end{align*}
                   
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []|\T1/pplj/b/n/10 Phase
  []
 
 
 AED: lastpage setting LastPage
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 275.
-[2 <./figures/RvsF.png> <./figures/phivsF.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 289.
+[2 <./figures/RvsF.png> <./figures/phivsF.png> <./figures/img1.png> <./figures/
+img2.png>] [3
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 9E2ECC47F44E710CE9C7E3B0D2D7A5A4;289.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 39542 strings out of 480876
- 903376 string characters out of 5911487
- 1360825 words of memory out of 5000000
- 54284 multiletter control sequences out of 15000+600000
+ 39557 strings out of 480876
+ 903628 string characters out of 5911487
+ 1361867 words of memory out of 5000000
+ 54294 multiletter control sequences out of 15000+600000
  585651 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,11n,102p,916b,725s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2128,10 +2151,10 @@ ist/fonts/type1/public/cbfonts/grmn1000.pfb><c:/texlive/2020/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palati
 no/uplb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><
 c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (2 pages, 471883 bytes).
+Output written on report.pdf (3 pages, 1260191 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
