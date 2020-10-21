@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.11)  21 OCT 2020 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.11)  21 OCT 2020 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1639,7 +1639,29 @@ ns
 Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/
 *}. on input line 69.
 )
-(./report.aux)
+(./report.aux
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 <
+      <<<<<< HEAD
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `Ciesielski1997' multiply defined.
+
+
+Package natbib Warning: Citation `Rowell1997' multiply defined.
+
+
+LaTeX Warning: Label `sec:results' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1665,6 +1687,31 @@ LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 9
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
 LaTeX Font Info:    ... okay on input line 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--9
+[]\T1/pplj/m/n/10 <<<<<<< HEAD    =======     >>>>>>>
+ []
+
+
+Underfull \hbox (badness 5374) in paragraph at lines 20--9
+\T1/pplj/m/n/10 32446e823411842fabee1a602a4b53e03eac92ee     <<<<<<<
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 20--9
+\T1/pplj/m/n/10 HEAD               =======       >>>>>>>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--9
+\T1/pplj/m/n/10 32446e823411842fabee1a602a4b53e03eac92ee
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--9
+\T1/pplj/m/n/10 <<<<<<< HEAD =======       >>>>>>>
+ []
+
 
 (c:/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-En
 glish.dict
@@ -1842,32 +1889,37 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
 (c:/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.19998pt on input line 66.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.24796pt on input line 66.
-<figures/circdiagram.png, id=31, 393.72093pt x 176.91093pt>
-File: figures/circdiagram.png Graphic file (type png)
-<use figures/circdiagram.png>
-Package pdftex.def Info: figures/circdiagram.png  used on input line 76.
-(pdftex.def)             Requested size: 239.40962pt x 107.57268pt.
-
-
-Package natbib Warning: Citation `Picone2018' on page 1 undefined on input line
- 94.
-
-(c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1pplj.fd)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \footskip is too small (9.03374pt): 
 Make it at least 12.0pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[1{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[1
 
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 9.19998pt on input line 66.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 13.24796pt on input line 66.
+<figures/circdiagram.png, id=40, 393.72093pt x 176.91093pt>
+File: figures/circdiagram.png Graphic file (type png)
+<use figures/circdiagram.png>
+Package pdftex.def Info: figures/circdiagram.png  used on input line 76.
+(pdftex.def)             Requested size: 239.40962pt x 107.57268pt.
+
+
+Package natbib Warning: Citation `Picone2018' on page 2 undefined on input line
+ 94.
+
+(c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1pplj.fd)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10> not available
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 137.
+ [2
 
  <./figures/circdiagram.png>] (./report.bbl)
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
@@ -1909,12 +1961,13 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 Package natbib Warning: There were undefined citations.
 
 
+Package natbib Warning: There were multiply defined citations.
+
+
 AED: lastpage setting LastPage
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 172.
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <7.6> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 172.
-[2
+[3
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
@@ -1928,12 +1981,15 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 39568 strings out of 480876
- 903823 string characters out of 5911487
- 1332801 words of memory out of 5000000
- 54322 multiletter control sequences out of 15000+600000
+ 39571 strings out of 480876
+ 903848 string characters out of 5911487
+ 1333166 words of memory out of 5000000
+ 54324 multiletter control sequences out of 15000+600000
  605789 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,14n,102p,793b,725s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1947,10 +2003,10 @@ exlive/2020/texmf-dist/fonts/type1/public/cbfonts/grmn1000.pfb><c:/texlive/2020
 t/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (2 pages, 159677 bytes).
+Output written on report.pdf (3 pages, 160913 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
